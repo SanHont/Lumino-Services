@@ -7,6 +7,9 @@ export async function load() {
 			landingPages {
 				content
 				quote
+				package1
+				package2
+				package3
 			}
 		}
 	`;
