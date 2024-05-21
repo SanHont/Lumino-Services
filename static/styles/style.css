@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic&family=Antic+Slab&display=swap');
 
 * {
 	margin: 0;
@@ -10,24 +12,27 @@
 }
 
 body {
-	background-color: #111110;
+	background-color: var(--background);
 }
 
 :root {
-	--background: #e2e2e2;
-	--background2: #111110;
+	--background: #272727;
+	--section-background: #f9f483;
+	--button: #ff6565;
+	--card-color: #8bb3ff;
+	--button-text: #f9f483;
+	--light-text-color: #f7f6f2;
+	--testimonial-card: #f7f6f2;
 	--text-color: #111110;
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
 	:root {
-		/* --background: #111110;
-		--text-color: #e2e2e2; */
 		--background: #e2e2e2;
 		--background2: #111110;
 		--text-color: #111110;
 	}
-}
+} */
 
 h1,
 h2,

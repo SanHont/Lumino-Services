@@ -1,7 +1,9 @@
 <script>
 	import Home from '../lib/components/home.svelte';
-    
-    export let data
+	import Info from '../lib/components/info.svelte';
+
+	export let data;
 </script>
 
-<Home data={data} />
+<Home {data} />
+<Info {data} />
