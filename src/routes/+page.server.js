@@ -10,6 +10,9 @@ export async function load() {
 				package1
 				package2
 				package3
+				package1Description
+				package2Description
+				package3Description
 			}
 		}
 	`;

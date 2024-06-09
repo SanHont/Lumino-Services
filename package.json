@@ -20,6 +20,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"aatjs": "^0.0.4",
 		"graphql-request": "^7.0.1",
 		"gsap": "^3.12.5"
 	}

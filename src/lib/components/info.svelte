@@ -4,6 +4,8 @@
 	import { gsap } from 'gsap';
 
 	onMount(() => {});
+
+	
 </script>
 
 <section>
@@ -11,7 +13,7 @@
 		<h2 class="title">Who am I?</h2>
 	</div>
 	<div class="reviews">
-		<h2 class="title">Reviews</h2>
+		<img src="assets/quote.svg"  alt=""/>
 		<div class="testimonial">
 			<p>
 				Sander transformed our website with her exceptional technical skills and creative design,
@@ -34,12 +36,15 @@
 	</div>
 	<div class="package-1">
 		<h2 class="title">{data.landingPages[0].package1}</h2>
+		<p class="description">{data.landingPages[0].package1Description}</p>
 	</div>
 	<div class="package-2">
 		<h2 class="title">{data.landingPages[0].package2}</h2>
+		<p class="description">{data.landingPages[0].package2Description}</p>
 	</div>
 	<div class="package-3">
 		<h2 class="title">{data.landingPages[0].package3}</h2>
+		<p class="description">{data.landingPages[0].package3Description}</p>
 	</div>
 	<div class="contact-me">
 		<h2 class="title">Contact</h2>
@@ -70,9 +75,6 @@
 	.about-me,
 	.reviews,
 	.back-to-top,
-	.package-1,
-	.package-2,
-	.package-3,
 	.contact-me {
 		background-color: var(--card-color);
 		width: 100%;
@@ -164,13 +166,36 @@
 		grid-area: contact;
 	}
 	.package-1 {
-		height: 18rem;
 		grid-area: package-1;
+		display: flex;
+		flex-direction: column;
 	}
+
+	.package-1,
+	.package-2,
+	.package-3 {
+		background-color: var(--card-color);
+		width: 100%;
+		color: var(--light-text-color);
+		height: 100%;
+		border-radius: 0.8rem;
+		display: flex;
+		justify-content: center;
+		padding: 2rem;
+	}
+
+	.description {
+		margin-top: 0.5rem;
+	}
+
 	.package-2 {
 		grid-area: package-2;
+		display: flex;
+		flex-direction: column;
 	}
 	.package-3 {
 		grid-area: package-3;
+		display: flex;
+		flex-direction: column;
 	}
 </style>
